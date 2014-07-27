@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Peers</title>
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdn.peerjs.com/0.3/peer.min.js"></script>
+<script src="js/tuna.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>
+<small>あなたのID:</small>
+<span id="myId"></span>
+</h1>
+<div class="connects">
+<input id="connect">
+<span class="btn"><a href='#'>Connect</a></span>
+</div>
+
+<ul class="video-box">
+<li>
+<video class="my-video" autoplay muted></video>
+</li>
+<li>
+<video class="others-video" autoplay></video>
+</li>
+</ul>
+
+<div class="effect-box">
+<small>effect:</small>
+<select class="select-effect">
+<option value="normal">normal</option>
+<option value="chorus">chorus</option>
+<option value="delay">delay</option>
+<option value="phaser">phaser</option>
+<option value="overdrive">overdrive</option>
+<option value="wahwah">wahwah</option>
+</select>
+</div>
+
+</div>
+</body>
+</html>
