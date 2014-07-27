@@ -126,7 +126,7 @@
       //if error
     });
 
-    $('#connectButton').click(function() {
+    $('.connects').find("a").click(function() {
       var peerId = $('#connect').val();
       console.log('connect', peerId);
       if(peerId === '') return false;
