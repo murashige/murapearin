@@ -35,7 +35,7 @@
     var tuna = new Tuna(audioContext);
     var input = audioContext.createMediaStreamSource(myStream);
     var volume = audioContext.createGain();
-    volume.gain.value = 0.8;
+    volume.gain.value = 0.9;
     var destination = audioContext.destination;
 
     //var delay = audioContext.createDelay();
@@ -114,6 +114,9 @@
 
   $(function(){
     $('#myId').text(myId);
+
+    $("video").get(0).volume = 0;
+    $("video").get(0).muted = 0;
 
     navigator.getUserMedia({audio: true, video: true},
     function(stream){
